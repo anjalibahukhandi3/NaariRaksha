@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">NaariRaksha</string>
+    <string name="status_safe">You are Safe</string>
+    <string name="sos">SOS</string>
+    <string name="caller_name">Mom</string>
+    <string name="incoming_call">Incoming call</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="fake_call">Fake Call</string>
+
+
+</resources>

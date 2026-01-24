@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#6A1B9A</color>  <!-- Purple -->
+    <color name="secondary">#FF5252</color> <!-- SOS Red -->
+    <color name="dark">#121212</color>
+    <color name="light">#FFFFFF</color>
+</resources>
