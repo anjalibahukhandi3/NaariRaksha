@@ -13,3 +13,13 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Backend and IDE
+target/
+*.class
+.idea/
+*.iml
+*.log
+.mvn/
+mvnw
+mvnw.cmd
