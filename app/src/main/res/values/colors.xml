@@ -1,7 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primary">#6A1B9A</color>  <!-- Purple -->
-    <color name="secondary">#FF5252</color> <!-- SOS Red -->
-    <color name="dark">#121212</color>
-    <color name="light">#FFFFFF</color>
+    <!-- Sophisticated Professional Palette -->
+    <color name="primary">#1A1A2E</color> <!-- Deep Midnight Blue -->
+    <color name="primary_dark">#16213E</color> <!-- Darker Navy -->
+    <color name="accent">#C5A059</color> <!-- Champagne Gold -->
+    <color name="background">#0F0F1B</color> <!-- Dark Tech Background -->
+    <color name="card_bg">#1F1F35</color> <!-- Glass-like card -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#94A3B8</color>
+    <color name="sos_red">#E11D48</color> <!-- Tech Red -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gold_soft">#4D C5A059</color>
 </resources>

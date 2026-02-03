@@ -1,44 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000">
+    android:background="#212121">
 
     <TextView
         android:id="@+id/txtCaller"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
         android:text="Incoming Call"
-        android:textSize="28sp"
-        android:textColor="@android:color/white"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="80dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txtName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Unknown Caller"
-        android:textSize="22sp"
-        android:textColor="@android:color/white"
-        app:layout_constraintTop_toBottomOf="@id/txtCaller"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:text="Family Member"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtCaller" />
 
-    <Button
-        android:id="@+id/btnEndCall"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:text="END CALL"
-        android:textColor="@android:color/white"
-        android:backgroundTint="#DC2626"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/callerIcon"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="64dp"
+        android:padding="24dp"
+        android:src="@drawable/ic_contacts"
+        android:background="#33FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="80dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtName"
+        app:shapeAppearanceOverlay="@style/CircleImageView"
+        app:tint="@color/white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnEndCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/ic_call"
+        android:rotation="135"
+        app:backgroundTint="@color/sos_red"
+        app:fabCustomSize="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tint="@color/white"
+        android:contentDescription="End Call" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Decline"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/btnEndCall"
+        app:layout_constraintStart_toStartOf="@id/btnEndCall"
+        app:layout_constraintTop_toBottomOf="@id/btnEndCall" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

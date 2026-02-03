@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_default">20dp</dimen>
+    <dimen name="margin_small">10dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="card_corner_radius">24dp</dimen>
+    <dimen name="button_height">60dp</dimen>
+    <dimen name="sos_button_size">180dp</dimen>
+</resources>
