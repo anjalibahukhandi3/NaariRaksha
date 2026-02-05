@@ -1,25 +1,35 @@
+# =========================
+# Android / Gradle
+# =========================
 *.iml
 .gradle
 /local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
 /build
 /captures
 .externalNativeBuild
 .cxx
-local.properties
 
-# Backend and IDE
+# =========================
+# IntelliJ / IDE
+# =========================
+.idea/
+.DS_Store
+*.log
+
+# =========================
+# Backend (Spring Boot)
+# =========================
 target/
 *.class
-.idea/
-*.iml
-*.log
-.mvn/
-mvnw
-mvnw.cmd
+
+# DO NOT ignore these (needed for backend build)
+# .mvn/
+# mvnw
+# mvnw.cmd
+
+# =========================
+# Cleanup old mistakes
+# =========================
+app/backend (1)/
+backend/IntelliJ IDEA*/
+backend/jbr/
