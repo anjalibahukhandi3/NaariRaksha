@@ -38,60 +38,18 @@ NaariRaksha/
 - **Language**: Kotlin
 - **Architecture**: MVVM with ViewBinding
 - **Networking**: Retrofit 2 + Gson
-- **Local Database**: Room SQL
+- **Local Database**:  SQL
 - **Location**: Google Fused Location Provider
 - **Sensors**: Accelerometer (Shake Detection)
 
 ### **Backend API**
 - **Framework**: Spring Boot 3.2.2
-- **Language**: Java 17
-- **Database**: H2 (dev) / PostgreSQL/MySQL (production)
+- **Language**: Java
+- **Database**: H2 (dev) / MySQL (production)
 - **ORM**: Spring Data JPA + Hibernate
 - **Build**: Maven
 - **Deployment**: Docker-ready with Dockerfile
 
----
-
-## 🚀 Deployment Guide
-
-### **Option A: Deploy Backend to Render (Free)**
-
-1. **Backend is in**: `app/backend (1)/backend/`
-
-2. **Push to GitHub** (if not already done):
-   ```bash
-   git add .
-   git commit -m "Full-stack NaariRaksha deployment"
-   git push origin main
-   ```
-
-3. **Deploy on Render**:
-   - Go to [render.com](https://render.com) and sign in
-   - Click **New+ > Web Service**
-   - Connect your **NaariRaksha** repository
-   - Configure:
-     - **Root Directory**: `app/backend (1)/backend`
-     - **Runtime**: Docker
-     - **Instance**: Free tier
-   - Add environment variable: `PORT=8080`
-   - Click **Create Web Service**
-   - Get your URL: `https://naariraksha-XXXX.onrender.com`
-
-4. **Update Android App**:
-   - Open `app/src/main/java/com/example/naariraksha/data/api/RetrofitClient.kt`
-   - Change `BASE_URL` to your Render URL:
-     ```kotlin
-     private const val BASE_URL = "https://naariraksha-XXXX.onrender.com/"
-     ```
-
-### **Option B: Run Locally**
-
-#### Backend
-```bash
-cd "app/backend (1)/backend"
-./mvnw spring-boot:run
-# Server runs on http://localhost:8080
-```
 
 #### Android App
 1. Open project in Android Studio
@@ -161,14 +119,5 @@ Import and test these endpoints:
 - **Production Database**: Configure PostgreSQL on Render for persistent data
 - **APK Signing**: Use Android Studio for signed release builds
 
----
-
-## 🔗 Links
-
-- **Repository**: https://github.com/anjalibahukhandi3/NaariRaksha
-- **Render Dashboard**: https://dashboard.render.com
-- **Issues**: https://github.com/anjalibahukhandi3/NaariRaksha/issues
-
----
 
 *Built with ❤️ for safety, empowerment, and elegance.*
