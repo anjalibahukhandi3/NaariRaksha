@@ -16,7 +16,7 @@ import android.view.View
 import android.widget.RelativeLayout
 import android.widget.TextView
 import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.core.app.ActivityCompat
@@ -101,7 +101,7 @@ class HomeActivity : AppCompatActivity() {
 
     private fun showSafetyTimerDialog() {
         val options = arrayOf("10 Minutes", "20 Minutes", "30 Minutes", "Cancel Active Timer")
-        AlertDialog.Builder(this, R.style.Theme_Material3_DayNight_Dialog_Alert)
+        MaterialAlertDialogBuilder(this)
             .setTitle("Safe Walk Timer")
             .setItems(options) { _, which ->
                 when (which) {

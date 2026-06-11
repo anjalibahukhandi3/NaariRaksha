@@ -11,7 +11,7 @@
         android:name="android.hardware.telephony"
         android:required="false" />
 
-    <application
+    <application android:name=".NaariRakshaApplication"
         android:allowBackup="true"
         android:usesCleartextTraffic="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,6 +20,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NaariRaksha"
         tools:targetApi="31">
+        <meta-data android:name="com.google.android.gms.auth.api.signin.clientId" android:value="1042239661296-6s4rg6gta2lko08f1mkfpetd3bscq76u.apps.googleusercontent.com" />
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBsi-4tCYVcCOY8_AOHmOGrKcjaAced9S0" />
 
         <!-- HOME -->
         <activity

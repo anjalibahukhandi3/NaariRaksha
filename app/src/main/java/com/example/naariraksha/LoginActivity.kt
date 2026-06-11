@@ -9,8 +9,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.example.naariraksha.data.api.RetrofitClient
 import com.google.android.material.textfield.TextInputEditText
-import com.naariraksha.backend.dto.LoginRequest
-import com.naariraksha.backend.dto.UserRegisterRequest
+import com.example.naariraksha.data.api.LoginRequest
+import com.example.naariraksha.data.api.UserRegisterRequest
 import kotlinx.coroutines.launch
 
 class LoginActivity : AppCompatActivity() {

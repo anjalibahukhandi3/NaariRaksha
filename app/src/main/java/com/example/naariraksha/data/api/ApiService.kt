@@ -1,7 +1,5 @@
 package com.example.naariraksha.data.api
 
-import com.naariraksha.backend.dto.LoginRequest
-import com.naariraksha.backend.dto.UserRegisterRequest
 import retrofit2.Response
 import retrofit2.http.Body
 import retrofit2.http.POST

@@ -12,3 +12,14 @@ data class LoginResponse(
 data class RegisterResponse(
     @SerializedName("message") val message: String
 )
+
+data class LoginRequest(
+    @SerializedName("email") var email: String = "",
+    @SerializedName("password") var password: String = ""
+)
+
+data class UserRegisterRequest(
+    @SerializedName("name") var name: String = "",
+    @SerializedName("email") var email: String = "",
+    @SerializedName("password") var password: String = ""
+)
